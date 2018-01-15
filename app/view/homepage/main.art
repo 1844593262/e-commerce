@@ -1,0 +1,376 @@
+<div class="wrapper">
+  <div class="home-section-loutinav">
+    <ul class="home-section-conul" id="Louti">
+      <li class="home-section-recom  itembar active">推荐</li>
+      <li class="home-section-brand-house  itembar">品牌馆</li>
+      <li class="home-section-jumax-sale  itembar">钜SALE</li>
+      <li class="home-section-jumax-new  itembar">钜NEW</li>
+      <li class="home-section-jumax-shopping  itembar">商城</li>
+    </ul>
+    <div class="home-section-gototop" id="gototop">
+      <img src="/static/image/gotop.jpg" alt="">
+    </div>
+    <div class="hidden">
+    <button type="button" class="btn btn-default btn-lg btn-block" onclick="ysf.open()">客服咨询</button>
+    </div>
+  </div>
+
+  <div id="LoutiNav">
+    <div class="home-section itemsection">
+      {{include './commodity-recommand.art'}}
+    </div>
+
+    <div class="home-section itemsection">
+      <div class="box-img-header pinpaiguan">
+        <div class="pull-left title">
+          品牌馆
+        </div>
+        <div class="pull-right action action-more">
+          <a href="/brand">MORE</a>
+        </div>
+      </div>
+      <div class="brand-mansion-middle clearfix">
+        <div class="pull-left item">
+          <div class="brand-mansion-left-section">
+            <a href="/brand/{{brandListBanner.storeId}}">
+              <img src={{brandListBanner.storeImg}}>
+            </a>
+          </div>
+        </div>
+        <div class="pull-left">
+          <div class="brand-mansion-img clearfix">
+            {{each brandListRemain}}
+              <div class="brand-mansion-item pull-left">
+                {{if $value}}
+                  <a href="/brand/{{$value.storeId}}">
+                    <img src={{$value.storeImg}}>
+                  </a>
+                  <div class="brand-mansion-etro">
+                    <div class="itemp">{{$value.storeName}}</div>
+                  </div>
+                {{/if}}
+              </div>
+            {{/each}}
+          </div>
+        </div>
+        <div class="brand-mansion-bottom-section clearfix">
+          <ul class="js-brand-mansion-list">
+            {{each brandwall}}
+              {{if $index !== 0}}
+                <li class="clearfix hidden">
+              {{else}}
+                <li class="clearfix">
+              {{/if}}
+
+                {{each $value }}
+                  <a class="brand-mansion-item pull-left" href="/brand/{{$value.storeId}}">
+                    <img src={{$value.storeLogo}} class="item">
+                  </a>
+                {{/each}}
+              </li>
+            {{/each}}
+          </ul>
+          <div class="brand-mansion-item brand-mansion-trigger js-brand-mansion-trigger">
+            <img src="/static/image/index-more.png">
+          </div>
+          <script>
+            $(document).on('click', '.js-brand-mansion-trigger', function (){
+              if ($('.js-brand-mansion-list li').not('.hidden').next().length) {
+                $('.js-brand-mansion-list li').not('.hidden').addClass('hidden').next().removeClass('hidden')
+              } else {
+                $('.js-brand-mansion-list li').not('.hidden').addClass('hidden')
+                $('.js-brand-mansion-list li').eq(0).removeClass('hidden')
+              }
+            })
+          </script>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-section">
+      <div class="box-img-header  disanfang clearfix">
+        <div class="pull-left title">第三方入驻</div>
+      </div>
+      <div class="The-third-enter">
+          <div class="The-third-enter-con clearfix">
+            <ul class="clearfix">
+              {{each thirdenter}}
+                  <li class="pull-left item">
+                    <a href="/brand/{{$value.storeId}}">
+                      <img src="{{$value.storeLogo}}" alt="{{ $value.storeName }}" class="item-img">
+                    </a>
+                  </li>
+              {{/each}}
+              </ul>
+          </div>
+      </div>
+    </div>
+
+    <div class="home-section itemsection">
+      <div class="box-img-header juhuigou">
+        <div class="pull-left title">
+          钜SALE惠购
+        </div>
+        <ul class="nav nav-tabs pull-right img-header-nav clearfix" role="tablist">
+          {{each reduction.itemList}}
+            <li role="presentation" class="item {{if $index === 0 }}active{{/if}}">
+              <a href="#reduction-{{$index}}" role="tab" data-toggle="tab">
+                {{$value.itemName}}
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        {{each reduction.itemList}}
+          <div role="tabpanel" class="tab-pane {{if $index === 0 }}active{{/if}}" id="reduction-{{$index}}">
+            <div class="showcase type-1 clearfix">
+              <div class="showcase-img pull-left">
+                <img src={{reduction.featuredPlaceImage}} />
+              </div>
+              <div class="showcase-main pull-left">
+                {{each $value.goodsList.slice(0, 4)}}
+                  <div class="item">
+                    <a class="showcase-item type-1" href="/goods/{{$value.goodsId}}">
+                      <div class="meta">
+                        <span class="discount">{{ ($value.sellPrice / $value.tagPrice * 10 ).toFixed(1) }}</span>折
+                      </div>
+                      <div class="showcase-item-img">
+                        <img src={{$value.url}} >
+                      </div>
+                      <div class="title">
+                        <div class="en">{{$value.goodsName}}</div>
+                        {{$value.description}}
+                      </div>
+                    </a>
+                  </div>
+                {{/each}}
+              </div>
+
+              <div class="showcase-sub pull-left">
+                {{each $value.goodsList.slice(4, 8)}}
+                  <div class="item">
+                    <a class="showcase-item type-1" href="/goods/{{$value.goodsId}}">
+                      <div class="meta">
+                        <span class="discount">{{ ($value.sellPrice / $value.tagPrice * 10 ).toFixed(1) }}</span>折
+                      </div>
+                      <div class="showcase-item-img">
+                        <img src={{$value.url}}>
+                      </div>
+                      <div class="title">
+                        <div class="en">{{$value.goodsName}}</div>
+                        {{$value.description}}
+                      </div>
+                    </a>
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="home-section itemsection">
+      <div class="box-img-header juxinpin">
+        <div class="pull-left title">
+          钜NEW新品
+        </div>
+
+        <ul class="nav nav-tabs  pull-right img-header-nav clearfix" role="tablist">
+          {{each jumaxNewgoods.itemList}}
+            <li role="presentation" class="item {{if $index === 0 }}active{{/if}}">
+              <a href="#jumax-new-goods-{{$index}}" role="tab" data-toggle="tab">
+                {{$value.itemName}}
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        {{each jumaxNewgoods.itemList}}
+          <div role="tabpanel" class="tab-pane {{if $index === 0 }}active{{/if}}" id="jumax-new-goods-{{$index}}">
+            <div class="showcase type-1 clearfix">
+              <div class="showcase-img pull-left">
+                <img src={{jumaxNewgoods.featuredPlaceImage}}>
+              </div>
+              <div class="showcase-main pull-left">
+                {{each $value.goodsList.slice(0, 4)}}
+                  <div class="item">
+                    <a class="showcase-item type-1" href="/goods/{{$value.goodsId}}">
+                      <div class="meta">
+                        <span class="discount">{{ ($value.sellPrice / $value.tagPrice * 10 ).toFixed(1) }}</span>折
+                      </div>
+                      <div class="showcase-item-img">
+                        <img src={{$value.url}}>
+                      </div>
+                      <div class="title">
+                        <div class="en">{{$value.goodsName}}</div>
+                        {{$value.description}}
+                      </div>
+                    </a>
+                  </div>
+                {{/each}}
+              </div>
+
+              <div class="showcase-sub pull-left">
+                {{each $value.goodsList.slice(4, 8)}}
+                  <div class="item">
+                    <a class="showcase-item type-1" href="/goods/{{$value.goodsId}}">
+                      <div class="meta">
+                        <span class="discount">{{ ($value.sellPrice / $value.tagPrice * 10 ).toFixed(1) }}</span>折
+                      </div>
+                      <div class="showcase-item-img">
+                        <img src={{$value.url}}>
+                      </div>
+                      <div class="title">
+                        <div class="en">{{$value.goodsName}}</div>
+                        {{$value.description}}
+                      </div>
+                    </a>
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="box-img-header shanpin">
+      <div class="pull-left title">商品</div>
+      <div class="pull-right action action-more">
+        <a href="/search">MORE</a>
+      </div>
+    </div>
+
+    {{if goodsFloor.length > 0}}
+      {{each goodsFloor}}
+        <div class="home-section itemsection">
+          <div class="showcase type-2">
+            <div class="top-section clearfix">
+              <div class="section-cat pull-left">
+                <div class="item">
+                  <img src="{{$value.floor.itemImage}}">
+                </div>
+              </div>
+              <div class="section-cat-feature pull-left">
+                {{each $value.storeList}}
+                  <div class="item">
+                    <a href="/brand/{{$value.storeId}}">
+                      <img src="{{$value.storeImg}}">
+                    </a>
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+
+            <div class="bottom-section clearfix">
+              <div class="section-action pull-left">
+                <div class="title">
+                  {{$value.floor.floorTitle}}
+                </div>
+
+                <ul class="action-nav">
+                  {{each $value.categoryList}}
+                    <li class="item">
+                      <a href="/search?cate={{$value.categoryId}}">{{$value.name}}</a>
+                    </li>
+                  {{/each}}
+                </ul>
+                <div class="extra">
+                  <a href="/search?cate={{$value.categoryId}}">MORE</a>
+                </div>
+              </div>
+
+              <div class="bottom-feature pull-left">
+                {{if $value.goodsList[0]}}
+                  <a class="item" href="/goods/{{$value.goodsList[0].goodsId}}">
+                    <img src={{$value.goodsList[0].url}}>
+                    <div class="detail">
+                      <div class="price">￥{{ $value.goodsList[0].sellPrice | currency 2 }}</div>
+                      <div class="desc">{{ $value.goodsList[0].goodsName }}</div>
+                    </div>
+                  </a>
+                {{/if}}
+              </div>
+
+              <div class="bottom-main pull-left">
+                {{each $value.goodsList.slice(1,7)}}
+                  <div class="item">
+                    <a class="showcase-item type-2" href="/goods/{{$value.goodsId}}">
+                      <div class="title textleft">
+                        <div class="en">{{$value.goodsName}}</div>
+                      {{$value.description}}
+                        <div class="price">￥{{$value.sellPrice | currency 2}}</div>
+                      </div>
+                      <div class="showcase-item-img">
+                        <img src={{$value.url}}>
+                      </div>
+                    </a>
+                  </div>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    {{/if}}
+
+    <div class="home-section large">
+      <a class="go-search-btn" href="/search">查看全部商品</a>
+    </div>
+
+    <div class="home-section">
+      {{include './carousel-recom.art'}}
+    </div>
+
+  </div>
+</div>
+
+<script>
+  $(function(){
+    var flag=true;
+
+    $(window).scroll(function(){
+      if(flag){
+        scroll();
+      }
+    });
+
+    function scroll(){
+      var srTop=$(window).scrollTop();
+
+      $("#LoutiNav .itemsection").each(function(){
+        var st=$(this).offset().top;
+        var sh=($(this).outerHeight())/2;
+
+        if(srTop>=st-sh){
+          var index=$(this).index();
+
+          $('#Louti .itembar').eq(index).addClass("active").siblings().removeClass("active");
+        }
+      })
+    }
+
+    $("#Louti .itembar").click(function(){
+      flag=false;
+      var aIndex=$(this).index();
+
+      $(this).addClass("active").siblings().removeClass("active");
+      $("html,body").stop().animate({"scrollTop":$("#LoutiNav .itemsection").eq(aIndex).offset().top},800,function(){
+        flag=true;
+      })
+    })
+
+    $("#gototop").click(function(){
+      flag=false;
+
+      $("html,body").stop().animate({"scrollTop":0},800,function(){
+        flag=true;
+      })
+    })
+  })
+</script>

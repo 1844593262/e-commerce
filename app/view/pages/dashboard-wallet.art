@@ -1,0 +1,5 @@
+<% extend('../layout/dashboard.art') %>
+{{block 'content'}}
+<div class="dashboard-wallet js-dashboard-wallet">
+</div>
+{{/block}}

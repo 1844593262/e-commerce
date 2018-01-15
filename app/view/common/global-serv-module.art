@@ -1,0 +1,24 @@
+ <div class="global-serv-module">
+    <div class="wrapper clearfix">
+         <div class="global-service-tel global-serv-module-item">
+            <p class="title">客服电话</p>
+            <div class="content">
+                <h3>北京-400-110-6661</h3>
+                <p>9:30-21:00</p>
+            </div>
+         </div>
+         <div class="global-about-max global-serv-module-item">
+            <p class="title">关于钜MAX</p>
+            <div class="content">
+                <p>钜MAX线上商城所有商品均来自北京首创奥特莱斯实体店面承诺消费者购买商品均为正品</p>
+            </div>
+         </div>
+         <div class="global-scan-code global-serv-module-item">
+            <p class="title">扫码关注</p>
+            <div class="content">
+                <img src="/static/image/wechat-qrcode.png" alt=""/>
+                <p class="large">钜MAX官方微信</p>
+            </div>
+         </div>
+    </div>
+ </div>

@@ -1,0 +1,13 @@
+{{ extend('../layout/cartboard.art') }}
+
+{{block 'content'}}
+<script>
+    window.__pageInitData__ = {{ id }}
+</script>
+
+<div class="wrapper">
+    <div class="js-club-order-pay">
+    </div>
+</div>
+
+{{/block}}

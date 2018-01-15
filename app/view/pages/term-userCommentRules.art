@@ -1,0 +1,17 @@
+<% extend('../layout/term.art') %>
+{{block 'content'}}
+<div class="term-aboutJumax">
+  <div class="term-aboutJumax-main">
+    <div class="term-aboutJumax-tilte">
+      <div class="title-titlep">用户评论守则</div>
+    </div>
+    <div class="term-userCommentRules-part">
+      <div>1、退货订单产生的商品评价将会被删除，未作出评价的将不能评价；</div>
+      <div>2、提倡发表有价值及原创评价；杜绝剽窃、无意义、违反法律法规的评价内容；</div>
+      <div>3、发表评价成功后会对评价文字进行审核，审核通过即被展现出来；不予审核通过的情况如下：</div>
+      <div>（1）评价文字与商品无关，且出现言辞露骨及敏感词汇的情况（如：领导及伟人姓名、淫秽词汇等）；</div>
+      <div>（2）评论仅发布无意义符号的，或评价内容没有任何参考价值；</div>
+    </div>
+  </div>
+</div>
+{{/block}}

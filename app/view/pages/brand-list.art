@@ -1,0 +1,24 @@
+{{ extend('../layout.art') }}
+{{block 'content'}}
+    <script>
+      window.__brandId__ = {{ brandId }}
+    </script>
+
+   {{include '../shopping-brand/shoping-brand-search.art'}}
+   {{include '../banner-selection.art'}}
+
+   <div class="brand-list-banner-wrapper" style="height: 400px; text-align: center;">
+    <img style="width: auto;" src="{{ detail.pcBanner }}">
+   </div>
+
+   <div class="brand-list-logo-wrapper">
+    <img src="{{ detail.storeLogo }}">
+   </div>
+
+   <div class="wrapper">
+      {{include '../brandlist/brand-list-carousel.art'}}
+
+      <div class="js-brand-list">
+      </div>
+   </div>
+{{/block}}

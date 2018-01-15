@@ -1,0 +1,27 @@
+<div class="search-filter">
+    <span class="filter-single-kind filter-all">综合</span>
+    <span class="filter-single-kind filter-hot">人气</span>
+    <span class="filter-single-kind filter-discount">折扣</span>
+    <span class="filter-single-kind filter-new">新品</span>
+    <div class="filter-drop drop-price">
+        <div class="title">价格</div>
+        <ul class="drop-select">
+            <li>价格从低到高</li>
+            <li>价格从高到低</li>
+        </ul>
+    </div>
+    <div class="filter-drop drop-sex">
+        <div class="title">性别</div>
+        <ul class="drop-select drop-select-sex">
+            <li>男、女款</li>
+            <li>男款</li>
+            <li>女款</li>
+        </ul>
+    </div>
+    <div class="filter-price-range pull-left">
+        <input class="range-min-max pull-left" type="text" placeholder="￥最小金额">
+        <div class="line pull-left">-</div>
+        <input class="range-min-max pull-left" type="text" placeholder="最大金额">
+        <div class="make-sure pull-left">确定</div>
+    </div>
+</div>

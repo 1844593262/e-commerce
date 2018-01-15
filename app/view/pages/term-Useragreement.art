@@ -1,0 +1,35 @@
+<% extend('../layout/term.art') %>
+{{block 'content'}}
+<div class="term-aboutJumax">
+  <div class="term-aboutJumax-main">
+    <div class="term-aboutJumax-tilte">
+      <div class="title-titlep">用户须知</div>
+    </div>
+    <div class="useragreement-part">
+      <div>（一）用户资料变更</div>
+      <div>若用户需更改资料信息，需在用户等级有效期内提交申请，每年有效期内仅有一次更改资料的机会。</div>
+    </div>
+    <div class="useragreement-part">
+      <div>（二）用户识别</div>
+      <div>用户以手机号为唯一注册识别，但涉及积分兑换时，需要将手机号与身份证号码绑定。</div>
+    </div>
+    <div class= "useragreement-part">
+      <div>（三）用户资格终止（注销）：</div>
+      <div>1、注册多个账号，即同一用户（包括但不限于同一姓名、同一身份证号、同一收货地址、同一IP、同一终端设备等）
+      拥有多张MAX CARD（即多个注册账号），一经发现，“钜MAX”有权仅保留注册日期最近时间的用户账户，原有各账户予以冻结、注销；</div>
+      <div>2、对于个人信息资料弄虚作假的用户账号（包括但不限于姓名、地址等信息，随意、胡乱填写；或无法通过正规渠道查验身份信息等情形），“钜MAX”有权予以冻结、注销；</div>
+      <div>3、恶意下单、利用活动/系统程序漏洞等获取经济利益的用户，一经发现，“钜MAX”有权将该账户所下订单取消，并对账户进行冻结、注销，必要时追究其经济及法律责任，其行为包括但不限于以下情形：</div>
+      <div>（1）注册多个账户参加充返/秒杀/团购/专区抢购等行为；</div>
+      <div>（2）注册多个账户参加充返活动，并下单采购非个人正常使用数量的大额商品获取经济利益的行为；</div>
+      <div>（3）非正规活动渠道或利用活动系统漏洞等方式，获得优惠券（抵现券）利用下单获取经济利益的行为；</div>
+      <div>（4）利用程序增加个人账户余额等行为；</div>
+      <div>（5）其他暂未列出，但用户损害钜MAX利益的行为。</div>
+      <div>4、其他损害首创钜大“钜MAX”形象和利益的行为。</div>
+    </div>
+    <div class ="useragreement-part">
+      <div>（四）解释及变更权</div>
+      <div>首创钜大“钜MAX”拥有对各等级用户内容的最终解释权及变更权。</div>
+    </div>
+  </div>
+</div>
+{{/block}}

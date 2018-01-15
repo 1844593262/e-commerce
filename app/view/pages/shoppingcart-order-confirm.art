@@ -1,0 +1,9 @@
+{{ extend('../layout/cartboard.art') }}
+
+{{block 'content'}}
+
+<div class="shopping-cart wrapper">
+    <div class="js-shopping-cart-confirm-wrapper">
+    </div>
+</div>
+{{/block}}

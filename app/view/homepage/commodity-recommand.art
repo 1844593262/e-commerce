@@ -1,0 +1,61 @@
+<div class="commodity-recom-whole clearfix">
+  <div class="pull-left left-section">
+    <div class="commodity-recom-imgbrand">
+      <a href="/goods/{{recomLeft.goodsId}}" class="commodity-recom-imgbrand-full">
+        <img src="{{recomLeft.url}}">
+        <div class="detail">
+          <div class="price">￥{{recomLeft.sellPrice | currency 2 }}</div>
+          <div class="desc">{{recomLeft.goodsName}}</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="pull-left right-section">
+    <div class="clearfix commdity-recom-top-section">
+      <div class="commdity-recom-blank commodity-recom-img pull-left">
+        {{each recombigtopimg}}
+          <div class="pull-left item">
+            <a class="commodity-recom-bigimg" href="/goods/{{$value.goodsId}}">
+              <i>
+                <img src="/static/image/home_icon_dis.png"  alt="" class="commodity-recom-crown">
+                <img src="/static/image/msg_tuijian_dis.png" alt="" class="commodity-recom-recom">
+              </i>
+              <img src={{$value.url}}  alt="" class="commodity-recom-imgbag">
+              <div class="commodity-recom-title">
+                <span class="commodity-recom-item-des">{{$value.description}}</span></br>
+                <span class="commodity-recom-item-first">{{$value.goodsName}}</span>
+              </div>
+              <div class="commodity-recom-pricebox">
+                  <p class="commodity-recom-pricebox-itemp1">￥{{$value.sellPrice | currency 2}}</p>
+                  <p class="commodity-recom-pricebox-itemp2">￥{{$value.tagPrice | currency 2}}</p>
+              </div>
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <div class="clearfix commdity-recom-bottom-section">
+      <div class="commdity-recom-blank commodity-recom-img pull-left">
+        {{each recomsmallimg}}
+          <div class="pull-left item">
+            <a class="commodity-recom-smallimg" href="/goods/{{$value.goodsId}}">
+              <i>
+                <img src="/static/image/msg_HOT_dis.png" alt="" class="commodity-recom-hot">
+              </i>
+              <img src={{$value.url}} alt="" class="commodity-recom-imgbag">
+              <div class="commodity-recom-title">
+                <span class="commodity-recom-item-des">{{$value.description}}</span></br>
+                <span class="commodity-recom-item-first">{{$value.goodsName}}</span>
+              </div>
+              <div class="commodity-recom-pricebox">
+                <p class="commodity-recom-pricebox-itemp1">￥{{$value.sellPrice | currency 2 }}</p>
+                <p class="commodity-recom-pricebox-itemp2">￥{{$value.tagPrice | currency 2 }}</p>
+              </div>
+            </a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<div class="sub-footer-whole-width">
+ <div class="wrapper">
+    <ul class="sub-footer clearfix">
+        <li class="sub-footer-item">
+          <span class="sub-footer-item-shou"><img src="/static/image/img_icon_dunpai_dis.png" alt=""></span>
+          <span class="title">质量承诺</span>
+        </li>
+        <li class="sub-footer-item">
+          <span class="sub-footer-item-img"><img src="/static/image/img_icon_jinpin_dis.png" alt=""></span>
+          <span class="title">钜MAX精品</span>
+        </li>
+        <li class="sub-footer-item">
+          <span>
+            <img class="logo" src="/static/image/logo_dis.png" alt="">
+          </span>
+        </li>
+        <li class="sub-footer-item">
+          <span class="sub-footer-item-img">
+            <img src="/static/image/img_icon_fahuo_dis.png" alt="">
+          </span>
+          <span class="title">快速发货</span>
+        </li>
+        <li class="sub-footer-item">
+          <span class="sub-footer-item-img">
+            <img src="/static/image/img_icon_baozhen_dis.png" alt="">
+          </span>
+          <span class="title">正品保证</span>
+        </li>
+    </ul>
+ </div>
+</div>
+
+
+
+
+

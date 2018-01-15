@@ -1,0 +1,10 @@
+{{ extend('../layout/dashboard.art') }}
+
+{{block 'content'}}
+  <script>
+      window.__orderId__ = {{ orderId }}
+  </script>
+
+  <div class="order-status-detail-list js-order-detail">
+  </div>
+{{/block}}

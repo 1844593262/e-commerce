@@ -1,0 +1,61 @@
+<div class="shopping-brand-switch">
+  <div class="shopping-brand-switch-banner clearfix">
+    <div class="shopping-brand-switch-con section-left pull-left">
+      <ul class="shopping-brand-switch-each js-shopping-slider">
+        {{each newList }}
+        <li class="shopping-brand-switch-eachli">
+          <a href="/brand/{{ $value.storeId }}">
+            <img src="{{ $value.storeImg }}">
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="shopping-brand-switch-con section-right pull-left">
+      <div class="shopping-brand-right-top clearfix js-shopping-slider-pager">
+        <ul>
+          {{each newList }}
+          <li class="item">
+            <a class="item-switch-con js-shopping-slider-pager-item" href="/brand/{{ $value.storeId }}" data-id="{{ $value.storeId }}">
+              <div class="item-switch-con-img pull-left">
+                <img src="{{ $value.storeImg }}" alt="">
+              </div>
+              <div class="item-switch-con-title east pull-left">
+                <p class="itemp">{{ $value.storeName }}</p>
+              </div>
+              <i class="item-switch-con-back item-switch-con-block"></i>
+            </a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="shopping-brand-right-bottom clearfix">
+        <ul class="clearfix" style="width:100%;height:100%">
+          <li class="pull-left shopping-brand-item pull-left">
+            <img src="/static/image/new-enter-brand.jpg">
+          </li>
+
+          {{each newList }}
+          <li class="pull-left shopping-brand-item pull-left">
+            <a href="/brand/{{ $value.storeId }}"><img src="{{ $value.storeLogo }}"></a>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$('.js-shopping-slider').bxSlider({
+  mode: 'fade',
+  pagerCustom: '.js-shopping-slider-pager',
+  auto: true,
+  pause: 2000
+})
+
+$(document).on('click', '.js-shopping-slider-pager-item', function () {
+  var id = $(this).data('id')
+
+  window.location.href = '/brand/' + id
+})
+</script>

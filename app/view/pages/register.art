@@ -1,0 +1,8 @@
+<% extend('../layout.art') %>
+{{block 'content'}}
+{{include '../reg-logo-top.art'}}
+<div class="reg-wrap-mid">
+    <div class="wrapper reg-wrap-wmiddle js-reg-box">
+    </div>
+</div>
+{{/block}}

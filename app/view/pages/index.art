@@ -1,0 +1,8 @@
+{{ extend('../layout.art') }}
+
+{{block 'content'}}
+  {{include '../banner-search.art'}}
+  {{include '../banner-selection.art'}}
+  {{include '../banner-carousel.art'}}
+  {{include '../homepage/main.art'}}
+{{/block}}

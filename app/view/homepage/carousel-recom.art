@@ -1,0 +1,50 @@
+<div class="slider-recom">
+  <div class="title">
+    <span>为你推荐</span>
+  </div>
+
+  <div class="slider-container">
+    <ul class="carousel-recom-main js-carousel-recom">
+      {{each goodsSuggestion}}
+        <li class="clearfix">
+          {{each $value}}
+            <a class="carousel-recom-item" href="/goods/{{ $value.goodsId }}">
+              <div class="carousel-recom-item-img">
+                <img src="{{ $value.url }}">
+              </div>
+              <div class="title">
+                {{ $value.goodsName }}
+              </div>
+              <div class="price">
+                ¥{{ $value.sellPrice | currency 2 }}
+              </div>
+            </a>
+          {{/each}}
+        </li>
+      {{/each}}
+    </ul>
+
+    <div class="aleft left slide-control js-slide-control-prev">
+      <img src="/static/image/prev_choose.png">
+    </div>
+    <div class="aright right slide-control js-slide-control-next">
+      <img src="/static/image/next_choose.png">
+    </div>
+  </div>
+
+  <script>
+    var recomSlider = $('.js-carousel-recom').bxSlider({
+      auto: false,
+      pager: false,
+      infiniteLoop: false
+    })
+
+    $('.js-slide-control-prev').on('click', function () {
+      recomSlider.goToPrevSlide()
+    })
+
+    $('.js-slide-control-next').on('click', function () {
+      recomSlider.goToNextSlide()
+    })
+  </script>
+</div>

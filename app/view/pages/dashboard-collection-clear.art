@@ -1,0 +1,12 @@
+{{ extend('../layout/dashboard.art') }}
+{{block 'content'}}
+
+<div class="dashboard-collection-clear">
+   <div class="dashboard-collection-clear-con">
+      <div class="collection-clear-con-img">
+        <img src="../../static/image/favorite_img_nofavorite.png" alt="">
+      </div>
+      <div class="collection-clear-con-title">你还没有任何收藏呢</div>
+   </div>
+</div>
+{{/block}}

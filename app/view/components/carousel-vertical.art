@@ -1,0 +1,19 @@
+<div class="slider-container vertical">
+  <ul class="carousel-main-list js-carousel-recom">
+    <li class="clearfix">
+      <div class="goods-detail-preview-item active">
+        <img src="../../static/image/goods-detail-large.jpg">
+      </div>
+      <div class="goods-detail-preview-item">
+        <img src="../../static/image/goods-detail-large.jpg">
+      </div>
+    </li>
+  </ul>
+
+  <a class="aleft left slide-control" href="#left">
+    <img src="../../static/image/prev_view.png">
+  </a>
+  <a class="aright right slide-control" href="#right">
+    <img src="../../static/image/next_view.png">
+  </a>
+</div>

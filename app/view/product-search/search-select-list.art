@@ -1,0 +1,91 @@
+<div class="select-list-wrapper">
+    <div class="select-result-nav">
+        <span>全部结果</span>
+    </div>
+    <ul class="select-list-main">
+        <li class="brand-li">
+            <div class="brand-title pull-left">品牌: </div>
+            <div class="brand-kinds">
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+                <label class="brand-single">
+                    <input type="checkbox">比华利保罗
+                </label>
+            </div>
+        </li>
+        <li class="brand-li li-bottom-none">
+            <div class="brand-title pull-left">分类: </div>
+            <div class="sort-style-kinds">
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+                <span class="sort-style-single">帆布鞋</span>
+            </div>
+        </li>
+        <div class="select-multiple">多选</div>
+        <div class="select-more">更多</div>
+        <span class="select-submit">提交</span>
+        <span class="select-cancel">取消</span>
+    </ul>
+</div>

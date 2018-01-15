@@ -1,0 +1,35 @@
+<div class="reg-wrap-top">
+    <div class="wrapper">
+    <div class="reglogo  clearfix">
+            <div class="shoppingcart-logo-img pull-left clearfix">
+                <div class="shoppingcart-img-con pull-left">
+                    <a href="/">
+                        <img src="../../static/image/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="shoppingcart-wenzi pull-left">购物车</div>
+            </div>
+            <div class="reg-proce pull-left clearfix">
+                <div class="reg-step pull-left clearfix">
+                    <div class="step1 pull-left"></div>
+                    <span class="iphone pull-left">购物车确认</span>
+                    <span class="item pull-left"><span class="reg-step-arrow"></span></span>
+                </div>
+                <div class="reg-step pull-left clearfix">
+                    <div  class="step2 pull-left"></div>
+                    <span class="pass pull-left">提交订单</span>
+                    <span class="item pull-left"><span class="reg-step-arrow"></span></span>
+                </div>
+                 <div class="reg-step pull-left clearfix">
+                    <div class="step3 pull-left"></div>
+                    <span class="regs pull-left">支付</span>
+                    <span class="item pull-left"><span class="reg-step-arrow"></span></span>
+                </div>
+                 <div class="reg-step pull-left clearfix">
+                    <div class="step4 pull-left"></div>
+                    <span class="finished  pull-left">完成</span>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+  {{include '../common/head.art'}}
+</head>
+<body>
+  <div id="app">
+    {{include '../common/header.art'}}
+
+    <div class="dashboard-search-header-wrapper">
+      <div class="wrapper">
+        {{include '../common/shoppingcart-logo.art'}}
+      </div>
+    </div>
+
+    {{block 'content'}}{{/block}}
+
+
+    {{include '../common/global-serv-module.art'}}
+    {{include '../common/footer-top.art'}}
+    {{include '../common/footer.art'}}
+  </div>
+  <!--[if lt IE 9]>
+    <script>
+      $('input, textarea').placeholder({ customClass: 'custom-placeholder' })
+    </script>
+  <![endif]-->
+
+  {{if assets[page + '.js'] }}
+  <script src="{{ assets[page + '.js'] }}"></script>
+  {{/if}}
+</body>
+</html>

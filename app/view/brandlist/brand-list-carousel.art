@@ -1,0 +1,60 @@
+<div class="brand-list-carousel">
+   <div class="slider-container type-2">
+      <ul class="carousel-recom-main js-carousel-recom clearfix">
+        {{each newGoods }}
+          <li class="clearfix">
+            <div class="brand-list-carousel-section clearfix">
+              {{each $value}}
+                <div class="brandlist-carousel-section-item js-brandlist-carousel-section-item pull-left" data-id="{{ $value.goodsId }}">
+                  <div class="brandlist-carousel-img">
+                    <img src="{{ $value.mediaUrl }}" alt="" class="item">
+                  </div>
+                  <div class="brandlist-carousel-intro">
+                    <p class="item">{{ $value.storeName }}</p>
+                    <p class="item">{{ $value.title }}</p>
+                  </div>
+                  <div class="brandlist-carousel-surplus">
+                    剩余<span class="red">{{ $value.stock }}</span>件
+                  </div>
+                  <div class="brandlist-carousel-price">
+                    <div class="brandlist-carousel-nowprice">￥{{ $value.sellPrice | currency 2 }}</div>
+                    <div class="brandlist-carousel-marketprice">￥{{ $value.tagPrice | currency 2 }}</div>
+                    <a href="/goods/{{ $value.goodsId }}" class="brandlist-carousel-look-detail">查看详情</a>
+                  </div>
+                </div>
+              {{/each}}
+            </div>
+          </li>
+        {{/each}}
+      </ul>
+
+      <div class="aleft left slide-control js-slide-control-prev">
+        <img src="/static/image/prev_pur.png">
+      </div>
+      <div class="aright right slide-control js-slide-control-next">
+        <img src="/static/image/next_pur.png">
+      </div>
+  </div>
+
+  <script>
+    $(document).on('click', '.js-brandlist-carousel-section-item', function () {
+      var id = $(this).data('id')
+
+      window.location.href = '/goods/' + id
+    })
+
+    var recomSlider = $('.js-carousel-recom').bxSlider({
+      auto: false,
+      pager: false,
+      infiniteLoop: false
+    })
+
+    $('.js-slide-control-prev').on('click', function () {
+      recomSlider.goToPrevSlide()
+    })
+
+    $('.js-slide-control-next').on('click', function () {
+      recomSlider.goToNextSlide()
+    })
+  </script>
+</div>

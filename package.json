@@ -1,0 +1,81 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "blueimp-md5": "^2.10.0",
+    "bootstrap": "^3.3.7",
+    "console-polyfill": "^0.3.0",
+    "egg": "^2.2.0",
+    "egg-scripts": "^2.1.0",
+    "egg-view-art": "^1.0.2",
+    "egg-view-nunjucks": "^2.1.4",
+    "es5-shim": "^4.5.10",
+    "es6-promise": "^4.2.2",
+    "jquery": "^1.12.4",
+    "jquery.jedate": "^6.0.2",
+    "js-cookie": "^2.2.0",
+    "lodash.chunk": "^4.2.0",
+    "moment": "^2.20.1",
+    "moment-range": "^3.1.0",
+    "query-string": "^5.0.1",
+    "serialize-javascript": "^1.4.0",
+    "yox": "^0.54.0"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "autod-egg": "^1.0.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "bxslider": "^4.2.13",
+    "cross-env": "^5.1.3",
+    "easywebpack": "^3.5.2",
+    "egg-bin": "^4.3.5",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "egg-webpack": "^3.2.5",
+    "es3ify-webpack-plugin": "0.0.1",
+    "eslint": "^4.14.0",
+    "eslint-config-egg": "^6.0.0",
+    "expose-loader": "^0.7.4",
+    "glob": "^7.1.2",
+    "internal-ip": "^3.0.1",
+    "path-exists": "^3.0.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.0",
+    "webpack-manifest-plugin": "^1.3.2",
+    "webpack-merge": "^4.1.1",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "webpack-dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.dev.config.js",
+    "start:dev": "npm run pack:prod && cross-env EGG_SERVER_ENV=dev egg-scripts start --daemon",
+    "start:test": "npm run pack:prod && cross-env EGG_SERVER_ENV=test egg-scripts start --daemon",
+    "start": "npm run pack:prod && cross-env EGG_SERVER_ENV=prod egg-scripts start --daemon",
+    "stop": "egg-scripts stop",
+    "dev": "egg-bin dev",
+    "pack:prod": "webpack --config ./build/webpack.prod.config.js",
+    "debug": "egg-bin debug",
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "MIT"
+}

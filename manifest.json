@@ -1,0 +1,12 @@
+{
+  "common.js": "common.js",
+  "devServerClient.js": "devServerClient.js",
+  "hot.js": "hot.js",
+  "ie-polyfill.js": "ie-polyfill.js",
+  "index.js": "index.js",
+  "login.js": "login.js",
+  "register-set-pasword.js": "register-set-pasword.js",
+  "register.js": "register.js",
+  "search.js": "search.js",
+  "vendor.js": "vendor.js"
+}

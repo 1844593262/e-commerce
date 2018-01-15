@@ -1,0 +1,17 @@
+<div class="module-hero-search">
+  <div class="wrapper">
+    <div class="hero-search-wrapper clearfix">
+      <div class="logo pull-left">
+        <a href="/"><img src="../static/image/logo.png"></a>
+      </div>
+      <div class="hero-search-main pull-left">
+        <img class="hero-search-banner" src="../static/image/search-banner.png">
+        <div class="js-module-search">
+          <input class="hero-search-input js-module-search-input">
+          <div class="search-btn js-module-search-btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

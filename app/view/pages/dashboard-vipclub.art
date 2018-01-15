@@ -1,0 +1,11 @@
+{{ extend('../layout/dashboard.art') }}
+
+{{block 'content'}}
+  <div class="dashboard-main js-body-blanceInter">
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="point">
+        {{include '../dashboard/vipclub-point.art'}}
+      </div>
+    </div>
+  </div>
+{{/block}}

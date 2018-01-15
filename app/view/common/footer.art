@@ -1,0 +1,16 @@
+<div class="footer">
+    <div class="login-bottom">
+       <div class="login-area-bottom">
+           <div class="wrapper">
+                <div class="login-copy-right">
+                    <a href="/help/about" class="item">关于我们</a>|
+                    <a href="/help/aftersale" class="item">售后服务</a>|
+                    <a href="/help/delivery" class="item">配送与验收</a>|
+                    <a href="/help/private" class="item">隐私保护声明</a>
+                </div>
+               <div class="login-tc">©北京恒盛华星投资管理有限公司 京ICP备13005288号-7</div>
+           </div>
+       </div>
+   </div>
+</div>
+<script src="https://qiyukf.com/script/c49b9552cdb5cb42b93ed05b256d11ee.js"></script>

@@ -1,0 +1,68 @@
+<div class="slider-container type-2">
+  <ul class="carousel-recom-main js-carousel-recom">
+    <li class="clearfix">
+      <div class="carousel-recom-item">
+        <div class="carousel-recom-item-img">
+          <img src="../../static/image/carousel-sample-1.jpg">
+        </div>
+        <div class="title">
+          汤米·希尔费格TOMMYHILFIGER男士羽绒服
+        </div>
+        <div class="price">
+          ¥2814.00
+        </div>
+      </div>
+      <div class="carousel-recom-item">
+        <div class="carousel-recom-item-img">
+          <img src="../../static/image/carousel-sample-1.jpg">
+        </div>
+        <div class="title">
+          汤米·希尔费格TOMMYHILFIGER男士羽绒服
+        </div>
+        <div class="price">
+          ¥2814.00
+        </div>
+      </div>
+      <div class="carousel-recom-item">
+        <div class="carousel-recom-item-img">
+          <img src="../../static/image/carousel-sample-1.jpg">
+        </div>
+        <div class="title">
+          汤米·希尔费格TOMMYHILFIGER男士羽绒服
+        </div>
+        <div class="price">
+          ¥2814.00
+        </div>
+      </div>
+      <div class="carousel-recom-item">
+        <div class="carousel-recom-item-img">
+          <img src="../../static/image/carousel-sample-1.jpg">
+        </div>
+        <div class="title">
+          汤米·希尔费格TOMMYHILFIGER男士羽绒服
+        </div>
+        <div class="price">
+          ¥2814.00
+        </div>
+      </div>
+      <div class="carousel-recom-item">
+        <div class="carousel-recom-item-img">
+          <img src="../../static/image/carousel-sample-1.jpg">
+        </div>
+        <div class="title">
+          汤米·希尔费格TOMMYHILFIGER男士羽绒服
+        </div>
+        <div class="price">
+          ¥2814.00
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <a class="aleft left slide-control" href="#left">
+    <img src="../../static/image/prev_pur.png">
+  </a>
+  <a class="aright right slide-control" href="#right">
+    <img src="../../static/image/next_pur.png">
+  </a>
+</div>

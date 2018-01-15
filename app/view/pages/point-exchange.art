@@ -1,0 +1,20 @@
+{{ extend('../layout.art') }}
+
+{{block 'content'}}
+
+  <div class="module-page-logo-title has-border">
+    <div class="wrapper">
+      <div class="left">
+        <div class="page-logo">
+          <img src="/static/image/logo_dis.png">
+        </div>
+        <div class="divider"></div>
+        <div class="page-title">积分兑换 - <span class="sub-title">小积分，大用途</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="js-point-exchange-wrapper">
+  </div>
+
+{{/block}}

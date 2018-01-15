@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <div class="shopping-brand-search">
+    <div class="shopping-brand-search-con clearfix">
+      <div class="shopping-search-logo pull-left">
+        <a href="/" class="logo-con"></a>
+      </div>
+      <div class="shopping-search-action pull-left">
+        <div class="shopping-search-action-con js-module-search">
+          <input type="text" class="pull-left shopping-search-con1 js-module-search-input">
+          <input type="submit" value="搜索" class="pull-left shopping-search-con2 js-module-search-btn">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

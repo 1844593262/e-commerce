@@ -1,0 +1,17 @@
+{{ extend('./layout.art') }}
+
+{{block 'head-js'}}
+  <script src="../static/js/Xslider.js"></script>
+{{/block}}
+
+{{block 'content'}}
+  <script>
+    window.__initPageData__ = {{ initPageData | serialize }}
+  </script>
+
+  {{include './banner-search.art'}}
+  {{include './banner-selection.art'}}
+  {{include './banner-carousel.art'}}
+  {{include './homepage/main.art'}}
+  {{include './common/global-serv-module.art'}}
+{{/block}}

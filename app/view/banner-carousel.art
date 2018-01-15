@@ -1,0 +1,40 @@
+<div id="home-banner" class="carousel slide banner-carousel home-banner-carousel" data-ride="carousel">
+  <ol class="carousel-indicators">
+    {{each bannercarousel}}
+    <li data-target="#home-banner" data-slide-to="{{$index}}" class="{{if $index === 0}}active{{/if}}">
+    </li>
+    {{/each}}
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    {{each bannercarousel}}
+      <div class="item {{if $index === 0}}active{{/if}}">
+        {{if $value.jumpTarget === 'ACTIVITY' }}
+        <a href="{{ $value.urlHref }}">
+        {{/if}}
+
+        {{if $value.jumpTarget === 'GOODS' }}
+        <a href="/goods/{{ $value.urlHref }}">
+        {{/if}}
+
+        {{if $value.jumpTarget === 'STORE' }}
+        <a href="/brand/{{ $value.urlHref }}">
+        {{/if}}
+
+        {{if $value.jumpTarget === 'NONE' }}
+          <div>
+        {{/if}}
+
+          <div class="item-img" style="background-image: url({{$value.url}})" >
+          </div>
+
+        {{if $value.jumpTarget === 'NONE' }}
+          </div>
+        {{/if}}
+        {{if $value.jumpTarget !== 'NONE' }}
+          </a>
+        {{/if}}
+      </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,17 @@
+{{ extend('../layout/cartboard.art') }}
+
+{{block 'head-js'}}
+<script src="/static/js/qrcode.min.js"></script>
+{{/block}}
+
+{{block 'content'}}
+<script>
+    window.__pageInitData__ = {{ id }}
+</script>
+
+<div class="wrapper">
+    <div class="js-shopping-cart-pay-wrapper">
+    </div>
+</div>
+
+{{/block}}

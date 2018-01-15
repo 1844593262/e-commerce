@@ -1,0 +1,20 @@
+
+{{ extend('../layout.art') }}
+
+{{block 'content'}}
+
+  <div class="wrapper">
+    <div class="login-logo">
+      <a href="/">
+        <img src="/static/image/login_logo.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <div class="loginwrap">
+    <div class="wrapper login-pos-rela">
+      <div class="loginbox login-pos-abso js-login-box">
+      </div>
+    </div>
+  </div>
+{{/block}}

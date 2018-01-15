@@ -1,0 +1,38 @@
+
+<div class="term-sidebar">
+  <ul class="term-sidebar-nav">
+     <li class="item">
+      <a href="/help/tutorial">新用户宝典</a>
+    </li>
+    <li class="item">
+      <a href="/help/paymentrefund">支付和退款</a>
+    </li>
+    <li class="item">
+      <a href="/help/delivery">配送验收</a>
+    </li>
+    <li class="item">
+      <a href="/help/aftersale">售后服务</a>
+    </li>
+    <li class="item">
+      <a href="/help/user/level">用户等级</a>
+    </li>
+    <li class="item">
+      <a href="/help/user/point">用户积分</a>
+    </li>
+    <li class="item">
+       <a href="/help/rules/coupon">优惠券规则</a>
+    </li>
+    <li class="item">
+      <a href="/help/agreement">用户须知</a>
+    </li>
+    <li class="item">
+      <a href="/help/rules/comment">用户评论守则</a>
+    </li>
+    <li class="item">
+      <a href="/help/private">用户隐私条款</a>
+    </li>
+    <li class="item">
+      <a href="/help/about">关于钜MAX</a>
+    </li>
+  </ul>
+</div>

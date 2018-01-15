@@ -1,0 +1,7 @@
+{{ extend('../layout/term.art') }}
+
+{{block 'content'}}
+  <div class="term-main">
+
+  </div>
+{{/block}}

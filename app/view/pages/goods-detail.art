@@ -1,0 +1,18 @@
+{{ extend('../layout.art') }}
+
+{{block 'head-js'}}
+<script src="/static/js/qrcode.min.js"></script>
+{{/block}}
+
+{{block 'content'}}
+  <script>
+    window.__pageInitData__ = {{ result | serialize }}
+  </script>
+
+  {{include '../shopping-brand/shoping-brand-search.art'}}
+
+  {{include '../banner-selection.art'}}
+
+  <div class="js-goods-detail-wrapper">
+  </div>
+{{/block}}

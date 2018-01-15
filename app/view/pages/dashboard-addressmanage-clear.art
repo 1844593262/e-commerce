@@ -1,0 +1,15 @@
+{{ extend('../layout/dashboard.art') }}
+
+{{block 'content'}}
+  <div class="dashboard-addressmanage-clear">
+      <div class="dashboard-addressmanage-clear-con">
+        <div class="no-address">
+          <img src="../../static/image/address_img_noaddress.png" alt="">
+        </div>
+        <div class="dashboard-addressmanage-title">您当前还没有收货地址</div>
+        <div class="add-adress">
+           <img src="../../static/image/address_btn_addaddress.png" alt="">
+        </div>
+      </div>
+  </div>
+{{/block}}

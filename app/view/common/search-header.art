@@ -1,0 +1,18 @@
+<div class="search-header-wrapper clearfix">
+    <a href="/" class="left-logo pull-left">钜MAX</a>
+    <ul class="middle-nav pull-left">
+        <li class="nav-li">
+            <a href="/" target="_blank">首页</a>
+        </li>
+        <li class="nav-li">
+            <a href="/brand" target="_blank">品牌馆</a>
+        </li>
+        <li class="nav-li">
+            <a href="/club" target="_blank">积分商城</a>
+        </li>
+    </ul>
+    <div class="right-input pull-right js-module-search">
+        <input type="text" class="input-text pull-left js-module-search-input">
+        <input type="submit" class="input-btn pull-left js-module-search-btn">
+    </div>
+</div>

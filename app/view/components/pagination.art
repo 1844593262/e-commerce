@@ -1,0 +1,14 @@
+<div class="ju-pagination">
+  <ul class="pagination">
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li><span class="dot">...</span></li>
+    <li><a href="#">200</a></li>
+    <li><a class="next" href="#"></a></li>
+    <li>第 <input class="page-number-input" type="text"> 页</li>
+    <li><div class="confirm">确定</div></li>
+  </ul>
+</div>

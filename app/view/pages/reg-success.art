@@ -1,0 +1,16 @@
+<% extend('../layout.art') %>
+{{block 'content'}}
+{{include '../reg-logo-top.art'}}
+<div class="reg-sucess">
+  <div class="reg-sucess-con">
+    <div class="wrapper">
+      <div class="reg-sucess-wrapper">
+        <div class="reg-sucess-welc"><div class="reg-sucess-welc-con">恭喜您注册成功</div></div>
+        <div class="reg-sucess-scure">账户设置更多密码保护措施，保障您的财产安全</div>
+        <div class="reg-sucess-imme">立刻登录</div>
+        <div class="reg-sucess-go"><b>(3s)</b>后自动跳转到</div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/block}}

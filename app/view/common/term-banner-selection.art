@@ -1,0 +1,231 @@
+<div class="module-banner-selection">
+  <div class="wrapper">
+    <div class="clearfix">
+      <div class="selection-section pull-left">
+        <div class="selection-topnav">
+          全部分类
+        </div>
+        <ul class="selection-sub-nav">
+          <li class="item">
+            <a class="title" href="#">
+              服装
+            </a>
+            <div class="content">
+              <a class="selection-sub-nav-item" href="#">
+                男装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                女装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                童装
+              </a>
+            </div>
+            <ul class="selection-sub-nav">
+              <li class="item">
+                <a class="title" href="#">
+                  服装
+                </a>
+                <div class="content">
+                  <a class="selection-sub-nav-item" href="#">
+                    男装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    女装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    童装
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <a class="title" href="#">
+              服装
+            </a>
+            <div class="content">
+              <a class="selection-sub-nav-item" href="#">
+                男装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                女装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                童装
+              </a>
+            </div>
+            <ul class="selection-sub-nav">
+              <li class="item">
+                <a class="title" href="#">
+                  服装
+                </a>
+                <div class="content">
+                  <a class="selection-sub-nav-item" href="#">
+                    男装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    女装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    童装
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <a class="title" href="#">
+              服装
+            </a>
+            <div class="content">
+              <a class="selection-sub-nav-item" href="#">
+                男装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                女装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                童装
+              </a>
+            </div>
+            <ul class="selection-sub-nav">
+              <li class="item">
+                <a class="title" href="#">
+                  服装
+                </a>
+                <div class="content">
+                  <a class="selection-sub-nav-item" href="#">
+                    男装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    女装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    童装
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <a class="title" href="#">
+              服装
+            </a>
+            <div class="content">
+              <a class="selection-sub-nav-item" href="#">
+                男装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                女装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                童装
+              </a>
+            </div>
+            <ul class="selection-sub-nav">
+              <li class="item">
+                <a class="title" href="#">
+                  服装
+                </a>
+                <div class="content">
+                  <a class="selection-sub-nav-item" href="#">
+                    男装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    女装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    童装
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <a class="title" href="#">
+              服装
+            </a>
+            <div class="content">
+              <a class="selection-sub-nav-item" href="#">
+                男装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                女装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                童装
+              </a>
+            </div>
+            <ul class="selection-sub-nav">
+              <li class="item">
+                <a class="title" href="#">
+                  服装
+                </a>
+                <div class="content">
+                  <a class="selection-sub-nav-item" href="#">
+                    男装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    女装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    童装
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <li class="item">
+            <a class="title" href="#">
+              服装
+            </a>
+            <div class="content">
+              <a class="selection-sub-nav-item" href="#">
+                男装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                女装
+              </a>
+              <a class="selection-sub-nav-item" href="#">
+                童装
+              </a>
+            </div>
+            <ul class="selection-sub-nav">
+              <li class="item">
+                <a class="title" href="#">
+                  服装
+                </a>
+                <div class="content">
+                  <a class="selection-sub-nav-item" href="#">
+                    男装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    女装
+                  </a>
+                  <a class="selection-sub-nav-item" href="#">
+                    童装
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul class="banner-selection-nav clearfix">
+        <li class="item">
+          <a href="/">首页</a>
+        </li>
+        <li class="item">
+          <a href="./brand">专题</a>
+        </li>
+        <li class="item">
+          <a href="#">优品钜惠</a>
+        </li>
+        <li class="item">
+          <a href="#">品牌馆</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

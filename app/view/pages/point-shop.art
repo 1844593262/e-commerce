@@ -1,0 +1,23 @@
+{{ extend('../layout.art') }}
+
+{{block 'content'}}
+  <script>
+    window.__pageInitData__ = {{ pageInitData | serialize }}
+  </script>
+
+  <div class="point-shop-main">
+    <div class="wrapper">
+      <div class="pointshop-top-search">
+      {{include '../common/search-header.art'}}
+      </div>
+
+      <div class="pointshop-selection-wrapper">
+        {{include '../pointshop/selection.art'}}
+      </div>
+
+      <div class="js-search-result-container">
+      </div>
+
+    </div>
+  </div>
+{{/block}}

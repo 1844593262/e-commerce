@@ -1,0 +1,22 @@
+{{ extend('../layout/cartboard.art') }}
+{{block 'content'}}
+
+<script>
+    window.__pageInitData__ = {{ mount }}
+</script>
+
+<div class="reg-sucess">
+  <div class="reg-sucess-con">
+    <div class="wrapper">
+      <div class="reg-sucess-wrapper">
+        <div class="pay-off-money">订单金额：￥<span>{{ mount | currency 2 }}</span>元</div>
+        <div class="reg-sucess-welc pay-off-money-con"><div class="reg-sucess-welc-con">订单支付成功</div></div>
+        <div class="reg-sucess-scure">您的包裹即将出发</div>
+        <div class="reg-sucess-imme">进入钜MAX商城</div>
+        <div class="reg-sucess-go"><b>(3s)</b>后自动跳转到</div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/block}}

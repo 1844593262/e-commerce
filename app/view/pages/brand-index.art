@@ -1,0 +1,16 @@
+{{ extend('../layout.art') }}
+{{block 'content'}}
+  <script>
+    window.__initPageData__ = {{ shopList | serialize }}
+  </script>
+  {{include '../shopping-brand/shoping-brand-search.art'}}
+  {{include '../banner-selection.art'}}
+  {{include '../shopping-brand/shopping-brand-banner.art'}}
+  <div class="wrapper">
+    {{include '../shopping-brand/shopping-brand-switch.art'}}
+    {{include '../shopping-brand/shopping-brand-list.art'}}
+
+    <div class="js-shopping-brand-section">
+    </div>
+  </div>
+{{/block}}

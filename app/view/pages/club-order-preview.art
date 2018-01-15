@@ -1,0 +1,12 @@
+{{ extend('../layout/cartboard.art') }}
+
+{{block 'content'}}
+<script>
+    window.__pageInitData__ = {{ preOrderDetail | serialize }}
+</script>
+
+<div class="wrapper" style="margin-top: -80px">
+    <div class="js-club-order-preview">
+    </div>
+</div>
+{{/block}}

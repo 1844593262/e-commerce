@@ -1,0 +1,19 @@
+<% extend('../layout/term.art') %>
+{{block 'content'}}
+<div class="term-aboutJumax">
+  <div class="term-aboutJumax-main">
+    <div class="term-aboutJumax-tilte">
+      <div class="title-titlep">关于钜MAX</div>
+    </div>
+    <div class="term-aboutJumax-con">
+      <div class="term-aboutJumax-img">
+        <img src="../../static/image/us01.jpg" alt="">
+      </div>
+        <div>2013年11月，首创置业股份有限公司（2868.HK，简称“首创置业”)联合北京首都创业集团有限公司（简称“首创集团”)控股钜大国际控股有限公司（13.29.HK，简称“钜大国际”）；
+        2015年3月，钜大国际正式更名为首创钜大有限公司（简称“首创钜大”）首创钜大战略定位为首创置业旗下以奥特莱斯为核心业务的商业地产。</div>
+        <div>首创钜大凭借奥莱项目开发以及运营管理经验，发挥精准选址、快速落位的优势能力，快速抢占市场，成功完成13个目标城市的战略布局，
+        建立先发优势和规模优势。秉持“成为中国最大的奥特莱斯综合运营商”的企业愿意，2017年，首创钜大开启互联网+奥特莱斯的模式，开启首创钜MAX电商平台运营。</div>
+    </div>
+  </div>
+</div>
+{{/block}}

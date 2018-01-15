@@ -1,0 +1,25 @@
+<div class="reg-wrap-top">
+    <div class="wrapper">
+    <div class="reglogo  clearfix">
+            <div class="reg-logo-img pull-left">
+                <img src="../static/image/reg_logo.png" alt="注册页面的logo" class="reg-logo-img">
+            </div>
+            <div class="reg-proce pull-left clearfix">
+                <div class="reg-step pull-left clearfix">
+                    <div class="step1 pull-left"></div>
+                    <span class="iphone pull-left">手机号验证</span>
+                    <span class="item pull-left"><span class="reg-step-arrow"></span></span>
+                </div>
+                <div class="reg-step pull-left clearfix">
+                    <div  class="step2 pull-left"></div>
+                    <span class="pass pull-left">设置密码</span>
+                    <span class="item pull-left"><span class="reg-step-arrow"></span></span>
+                </div>
+                 <div class="reg-step pull-left clearfix">
+                    <div class="step3 pull-left"></div>
+                    <span class="regs pull-left">注册成功</span>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>

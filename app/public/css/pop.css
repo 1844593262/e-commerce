@@ -1,0 +1,93 @@
+ /* laye.css 重写样式 */
+
+.sd-layer-title {
+  padding: 0 30px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  background-color: #c9b272;
+  border-bottom: none;
+}
+
+.layui-layer-btn .layui-layer-btn0 {
+  border-color: #cab066 !important;
+  background-color: #cab066 !important;
+  color: #fff !important;
+}
+
+/* 标题tips左右 */
+
+.layui-layer .sd-layer-title .header-text-left {
+    font-size: 20px;
+    float: left;
+}
+
+.layui-layer .sd-layer-title .header-text-right {
+    font-size: 14px;
+    float: right;
+}
+/*
+.layui-layer .layui-layer-content {
+    text-align: center;
+} */
+
+.model-content {
+    margin: 60px auto 0;
+}
+
+.model-content .remind-text {
+    font-size: 26px;
+}
+
+.model-content .remind-text .remind-text-left {
+    width: 65px;
+    height: 55px;
+    padding-right: 12px;
+    vertical-align: middle;
+}
+
+.model-content .remind-text .remind-text-right {
+    color: #666;
+}
+
+.model-content .notice-text {
+    font-size: 16px;
+    margin: 26px 0 66px;
+}
+
+.model-content .notice-text .notice-text-left {
+    padding-right: 5px;
+    color: #cab066;
+}
+
+.model-content .notice-text .notice-text-right {
+    color: #666;
+}
+
+.model-content .confirm-btns {
+    font-size: 18px;
+    text-align: center;
+}
+
+.model-content .confirm-btns .defalut-btn {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.model-content .confirm-btns .confirm-sure {
+   color: #fff;
+   background-color: #cab066;
+}
+
+.model-content .confirm-btns .confirm-cancel {
+    margin-left: 20px;
+    color: #999;
+    background-color: #e6e6e6;
+}

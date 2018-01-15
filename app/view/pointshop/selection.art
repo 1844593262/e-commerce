@@ -1,0 +1,65 @@
+<div class="module-selection-banner clearfix">
+  <div class="left-section pull-left">
+    <div class="point-section">
+      <div class="icon-block">
+        <img src="/static/image/account02_white.png">
+      </div>
+      <div class="divider"></div>
+      <div class="point-content">
+        <div class="title">
+          我的积分
+        </div>
+        <div class="content">
+          5000
+        </div>
+      </div>
+    </div>
+    <div class="selection-section">
+      <div class="selection-topnav">
+        <a href="/club">
+          <img class="default" src="/static/image/integral_icon_all_default.png">
+          <img class="active" src="/static/image/integral_icon_all.png"> 全部
+        </a>
+      </div>
+
+      {{if pageInitData.categories}}
+      <ul class="module-cate-nav point-cate-nav">
+        {{each pageInitData.categories}}
+          {{if $index < 5}}
+          <li class="item">
+            <div class="title">
+              <img class="default" src="/static/image/integral_icon_coat_default.png">
+              <img class="active" src="/static/image/integral_icon_coat.png">
+              {{ $value.name }}
+            </div>
+            {{if $value.children.length }}
+              <ul class="float-nav cate-float-nav">
+                {{each $value.children}}
+                <li class="item">
+                  <div class="nav-item-title">
+                    {{ $value.name }}
+                  </div>
+                  {{if $value.children.length }}
+                  <div class="content">
+                    {{each $value.children}}
+                    <a class="selection-sub-nav-item" href="/club?cate={{ $value.categoryId }}">
+                      {{$value.name}}
+                    </a>
+                    {{/each}}
+                  </div>
+                  {{/if}}
+                </li>
+                {{/each}}
+              </ul>
+            {{/if}}
+          </li>
+          {{/if}}
+        {{/each}}
+      </ul>
+      {{/if}}
+    </div>
+  </div>
+  <div class="banner-section pull-right">
+    <img src="/static/image/selection-banner.jpg">
+  </div>
+</div>

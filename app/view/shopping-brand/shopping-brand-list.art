@@ -1,0 +1,47 @@
+<div class="shopping-brand-list">
+  <div class="box-img-header pinpaiguan">
+    <div class="pull-left title">
+      品牌馆
+    </div>
+  </div>
+
+  <div class="slider-container type-2">
+    <ul class="carousel-recom-main js-brand-wall-slider clearfix">
+      {{each brandWall}}
+      <li class="clearfix">
+        <div class="shopping-brand-item-section clearfix">
+          {{each $value item}}
+          <div class="shopping-brand-item pull-left">
+            <a href="/brand/{{item.storeId}}">
+              <img src="{{item.storeLogo}}" alt="" class="item">
+            </a>
+          </div>
+          {{/each}}
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+
+    <div class="aleft left slide-control js-slider-control-left">
+      <img src="/static/image/prev_pur.png">
+    </div>
+    <div class="aright right slide-control js-slider-control-right">
+      <img src="/static/image/next_pur.png">
+    </div>
+  </div>
+</div>
+
+<script>
+var slider = $('.js-brand-wall-slider').bxSlider({
+  pager: false,
+  pause: 2000
+})
+
+$('.js-slider-control-left').on('click', function () {
+  slider.goToPrevSlide()
+})
+
+$('.js-slider-control-right').on('click', function () {
+  slider.goToNextSlide()
+})
+</script>

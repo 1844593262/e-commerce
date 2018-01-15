@@ -1,0 +1,17 @@
+{{ extend('../layout.art') }}
+
+{{block 'content'}}
+  <script>
+    window.__pageInitData__ = {{ pageInitData | serialize }}
+  </script>
+
+  <div class="model-search-select">
+    <div class="wrapper">
+      {{include '../common/search-header.art'}}
+
+      <div class="js-search-result-container">
+      </div>
+    </div>
+  </div>
+  </div>
+{{/block}}

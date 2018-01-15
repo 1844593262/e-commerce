@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="ie8"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+<head>
+  {{include '../common/head.art'}}
+</head>
+<body>
+  <div id="app">
+    {{include '../common/header.art'}}
+
+    <div class="module-page-logo-title">
+      <div class="wrapper">
+        <div class="left">
+          <div class="page-logo">
+            <img src="../../static/image/logo_dis.png">
+          </div>
+          <div class="divider"></div>
+          <div class="page-title">
+            指尖上的首创奥莱
+          </div>
+        </div>
+        <div class="pull-right">
+          <div class="search-header-wrapper">
+            <div class="right-input">
+              <input type="text" placeholder="" class="input-text pull-left">
+              <input type="submit" class="input-btn pull-left">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="term-banner-selection-wrapper">
+      {{include '../banner-selection.art'}}
+    </div>
+
+    {{block 'top'}}{{/block}}
+
+    <div class="wrapper">
+      <div class="term-main clearfix">
+        <div class="term-left pull-left">
+          {{include '../common/term-sidebar.art'}}
+        </div>
+        <div class="term-right pull-right">
+          {{block 'content'}}{{/block}}
+        </div>
+      </div>
+    </div>
+
+    {{include '../common/footer.art'}}
+  </div>
+  <!--[if lt IE 9]>
+    <script>
+      $('input, textarea').placeholder({ customClass: 'custom-placeholder' })
+    </script>
+  <![endif]-->
+
+  {{if assets[page + '.js'] }}
+  <script src="{{ assets[page + '.js'] }}"></script>
+  {{/if}}
+</body>
+</html>

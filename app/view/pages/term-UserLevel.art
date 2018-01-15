@@ -1,0 +1,40 @@
+<% extend('../layout/term.art') %>
+{{block 'content'}}
+<div class="term-aboutJumax">
+  <div class="term-aboutJumax-main">
+    <div class="term-aboutJumax-tilte">
+      <div class="title-titlep">用户等级</div>
+    </div>
+    <div class="term-UserLevel-part">
+      <div>MAX CARD VIP（注册之日起）</div>
+      <div>MAX CARD SVIP（成长值达到指定数额15000时，系统即自动升级，有效期为一年）</div>
+      <table class="term-UserLevel-table">
+        <tbody>
+          <tr>
+            <td>用户等级及规则</td>
+            <td>VIP用户</td>
+            <td>SVIP用户</td>
+          </tr>
+           <tr>
+            <td>成长值</td>
+            <td>0-14999</td>
+            <td>15000及以上</td>
+          </tr>
+           <tr>
+            <td>有效期</td>
+            <td>永久有效</td>
+            <td>有效期1年，1年后扣除10000成长值，根据剩余成长值重新计算级别</td>
+          </tr>
+          <tr>
+            <td>增速系数</td>
+            <td>1</td>
+            <td>1.5</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>*用户等级的升降均由系统自动审核，无需申请，成为SVIP用户，将享受更多用户权益。</div>
+    </div>
+
+  </div>
+</div>
+{{/block}}
